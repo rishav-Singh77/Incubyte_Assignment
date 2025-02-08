@@ -25,84 +25,16 @@ This repository contains my solution to the Data Craftsperson assessment provide
 2. **Aggregate Analysis:** Computed total sales, average sales, and growth rates.
 3. **Drill-Down Analysis:** Generated detailed insights based on product, region, and customer segments.
 
-## 💾 SQL Scripts
+## 💾 Question Answerd using SQL Queries
 
 The SQL scripts used for data analysis are located in the `sql-scripts` folder. Below are some key queries:
 
 - **Total Sales Calculation:** 
-  ```sql
-SELECT 
-    SUM(TransactionAmount) AS Total_Sale
-FROM
-    assessment_dataset;
-
 - **Average Transaction Amount:** 
-  
-SELECT 
-    AVG(TransactionAmount) AS Avg_Transaction_Amount
-FROM
-    assessment_dataset;
-
 - **City-Wise Online vs In-Store Sale:** 
-  
-SELECT 
-    City,
-    StoreType,
-    SUM(Quantity) AS Quantity,
-    SUM(TransactionAmount) AS Transaction_Amount
-FROM
-    assessment_dataset
-GROUP BY City , StoreType
-ORDER BY City , Transaction_Amount DESC;
-
 - **City-Wise Return:** 
-  
-SELECT 
-    City,
-    SUM(Quantity) AS Quantity,
-    SUM(TransactionAmount) AS Transaction_Amount
-FROM
-    assessment_dataset
-WHERE
-    Returned = 'Yes'
-GROUP BY City
-ORDER BY Transaction_Amount DESC;```
-
 - **Discount Impact on Sale:** 
-  ```sql
-SELECT 
-    CASE
-        WHEN DiscountPercent BETWEEN 0 AND 10 THEN '0-10%'
-        WHEN DiscountPercent BETWEEN 11 AND 20 THEN '11-20%'
-        WHEN DiscountPercent BETWEEN 21 AND 30 THEN '21-30%'
-        WHEN DiscountPercent BETWEEN 31 AND 40 THEN '31-40%'
-        WHEN DiscountPercent BETWEEN 41 AND 50 THEN '41-50%'
-        WHEN DiscountPercent BETWEEN 51 AND 60 THEN '51-60%'
-        WHEN DiscountPercent BETWEEN 61 AND 70 THEN '61-70%'
-        WHEN DiscountPercent BETWEEN 71 AND 80 THEN '71-80%'
-        WHEN DiscountPercent BETWEEN 81 AND 90 THEN '81-90%'
-        WHEN DiscountPercent BETWEEN 91 AND 100 THEN '91-100%'
-        ELSE '0-10%'
-    END AS Discount,
-    SUM(TransactionAmount) AS TotalSales
-FROM
-    assessment_dataset
-GROUP BY Discount
-ORDER BY TotalSales DESC;```
-
 - **Monthly Sales Performance:** 
-  ```sql
-SELECT 
-    DATE_FORMAT(STR_TO_DATE(TransactionDate, '%d/%m/%Y %H:%i'),
-            '%M') AS Months,
-    SUM(TransactionAmount) AS TotalSales,
-    COUNT(TransactionID) AS TotalTransactions
-FROM
-    assessment_dataset
-WHERE
-    TransactionDate IS NOT NULL
-GROUP BY Months
-ORDER BY TotalSales;```
 
 ## 📚 Instructions
 
