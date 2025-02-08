@@ -35,17 +35,16 @@ SELECT
     SUM(TransactionAmount) AS Total_Sale
 FROM
     assessment_dataset;
-    ```sql
 
 - **Average Transaction Amount:** 
-  ```sql
+  
 SELECT 
     AVG(TransactionAmount) AS Avg_Transaction_Amount
 FROM
-    assessment_dataset;```
+    assessment_dataset;
 
 - **City-Wise Online vs In-Store Sale:** 
-  ```sql
+  
 SELECT 
     City,
     StoreType,
@@ -54,10 +53,10 @@ SELECT
 FROM
     assessment_dataset
 GROUP BY City , StoreType
-ORDER BY City , Transaction_Amount DESC;```
+ORDER BY City , Transaction_Amount DESC;
 
 - **City-Wise Return:** 
-  ```sql
+  
 SELECT 
     City,
     SUM(Quantity) AS Quantity,
