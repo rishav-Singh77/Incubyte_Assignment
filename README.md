@@ -29,12 +29,23 @@ This repository contains my solution to the Data Craftsperson assessment provide
 
 The SQL scripts used for data analysis are located in the `sql-scripts` folder. Below are some key queries:
 
-- **Total Sales Calculation:** 
-- **Average Transaction Amount:** 
-- **City-Wise Online vs In-Store Sale:** 
-- **City-Wise Return:** 
-- **Discount Impact on Sale:** 
-- **Monthly Sales Performance:** 
+1. **Total Sales Calculation**
+2. **Average Transaction Amount**
+3. **Sales by Payment Method**
+4. **City Wise Sale**
+5. **Region Wise Sale**
+6. **Top 3 Cities with Highest Sale**
+7. **City wise Online vs In-Store Sale**
+8. **City wise Return**
+9. **Top 3 Sellable Products**
+10. **Most Returned Product**
+11. **Age Group wise Spend**
+12. **Gender Wise Sale**
+13. **Top 3 Cities with most no of Transaction**
+14. **top 3 Loyal Customers**
+15. **Promotional vs Non-Promotional Sale**
+16. **Discount Impact on Sale**
+17. **Monthly Sales Performance**
 
 ## 📚 Instructions
 
