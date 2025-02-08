@@ -8,15 +8,15 @@ This repository contains my solution to the Data Craftsperson assessment provide
 - **Returns Impact:** Out of the total sales, ₹5,09,62,10,660 was returned, resulting in a net sale of ₹5,10,64,52,300.
 - **Promotional Sales:** Promotional sales accounted for ₹5,09,88,46,678, representing a significant portion of total sales.
 - **Customer Insights:**
-      -The 46-65 age group contributed the most to sales.
-      -Customer with Customer ID 32460 spent the highest amount of ₹8,00,724.
+      1. The 46-65 age group contributed the most to sales.
+      2. Customer with Customer ID 32460 spent the highest amount of ₹8,00,724.
 -**Average Transaction and Ratings:**
-      -The average transaction value was ₹20,405.
-      -All products had an average rating of 3.
+      1. The average transaction value was ₹20,405.
+      2. All products had an average rating of 3.
 - **Shipping Costs for Returns:** The total shipping cost for returned products amounted to ₹9,90,19,972. 
 - **Top Cities and Regions:**
-      -Kolkata recorded the highest sales among cities.
-      -The South region emerged as the best-performing region.
+      1. Kolkata recorded the highest sales among cities.
+      2. The South region emerged as the best-performing region.
 - **Payment Method Analysis:** All four payment methods contributed almost equally to total sales.
 - **Promotional Impact:** Discounts in the 0-10% range accounted for 28% of the total sales, the highest among all discount ranges.
 - **Gender-Wise Sales:** Sales distribution was almost equal across genders—Male, Female, and Other.  
