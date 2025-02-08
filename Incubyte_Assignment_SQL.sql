@@ -221,3 +221,19 @@ WHERE
 GROUP BY DATE_FORMAT(STR_TO_DATE(TransactionDate, '%d/%m/%Y %H:%i'),
         '%M')
 ORDER BY TotalSales;
+
+-- 18. Product wise Feedback
+SELECT 
+    ProductName, AVG(FeedbackScore) AS Avg_Score
+FROM
+    assessment_dataset
+GROUP BY ProductName
+ORDER BY Avg_Score DESC;
+
+-- 19. Customer wise Transaction
+SELECT 
+    CustomerID, SUM(TransactionAmount)
+FROM
+    assessment_dataset
+GROUP BY CustomerID
+ORDER BY SUM(TransactionAmount) DESC;
