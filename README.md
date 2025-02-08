@@ -35,7 +35,7 @@ SELECT
     SUM(TransactionAmount) AS Total_Sale
 FROM
     assessment_dataset;
-    ```
+    ```sql
 
 - **Average Transaction Amount:** 
   ```sql
