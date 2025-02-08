@@ -34,14 +34,14 @@ The SQL scripts used for data analysis are located in the `sql-scripts` folder. 
 SELECT 
     SUM(TransactionAmount) AS Total_Sale
 FROM
-    assessment_dataset;
+    assessment_dataset;```
 
 - **Average Transaction Amount:** 
   ```sql
 SELECT 
     AVG(TransactionAmount) AS Avg_Transaction_Amount
 FROM
-    assessment_dataset;
+    assessment_dataset;```
 
 - **City-Wise Online vs In-Store Sale:** 
   ```sql
@@ -53,7 +53,7 @@ SELECT
 FROM
     assessment_dataset
 GROUP BY City , StoreType
-ORDER BY City , Transaction_Amount DESC;
+ORDER BY City , Transaction_Amount DESC;```
 
 - **City-Wise Return:** 
   ```sql
@@ -66,7 +66,7 @@ FROM
 WHERE
     Returned = 'Yes'
 GROUP BY City
-ORDER BY Transaction_Amount DESC;
+ORDER BY Transaction_Amount DESC;```
 
 - **Discount Impact on Sale:** 
   ```sql
@@ -88,7 +88,7 @@ SELECT
 FROM
     assessment_dataset
 GROUP BY Discount
-ORDER BY TotalSales DESC;
+ORDER BY TotalSales DESC;```
 
 - **Monthly Sales Performance:** 
   ```sql
@@ -102,7 +102,7 @@ FROM
 WHERE
     TransactionDate IS NOT NULL
 GROUP BY Months
-ORDER BY TotalSales;
+ORDER BY TotalSales;```
 
 ## 📚 Instructions
 
