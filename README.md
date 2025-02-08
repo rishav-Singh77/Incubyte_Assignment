@@ -34,7 +34,8 @@ The SQL scripts used for data analysis are located in the `sql-scripts` folder. 
 SELECT 
     SUM(TransactionAmount) AS Total_Sale
 FROM
-    assessment_dataset;```
+    assessment_dataset;
+    ```
 
 - **Average Transaction Amount:** 
   ```sql
